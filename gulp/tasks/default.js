@@ -1,6 +1,8 @@
 
+
 'use strict'
 
-const gulp = require('gulp')
+const gulp = require('gulp');
 
-gulp.task('default', ['build'])
+// 使用 gulp.series() 来定义依赖任务
+gulp.task('default', gulp.series('build'));
